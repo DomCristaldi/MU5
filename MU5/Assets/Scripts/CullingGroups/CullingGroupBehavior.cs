@@ -63,14 +63,19 @@ public class CullingGroupBehavior : MonoBehaviour {
                                                                   boundingSphereRad);
     }
 
-    //functions to be overridden on a case-by-case basis
+    /// <summary>
+    /// Define what happens when the Bounding Sphere enters the View Frustrum
+    /// </summary>
     public virtual void OnVisible() {
-        Debug.LogFormat("OnVis {0}", boundingSphereIndex);
+        //Debug.LogFormat("OnVis {0}", boundingSphereIndex);
 
     }
 
+    /// <summary>
+    /// Define what happens when the Bounding Sphere leaves the View Frustrum
+    /// </summary>
     public virtual void OnInvisible() {
-        Debug.LogFormat("OnInvis {0}", boundingSphereIndex);
+        //Debug.LogFormat("OnInvis {0}", boundingSphereIndex);
 
     }
 

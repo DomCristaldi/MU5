@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class AI_CullingGroupBehavior : CullingGroupBehavior {
+public class MeshRenderer_CullingGroupBehavior : CullingGroupBehavior {
 
     MeshRenderer meshRen;
 
